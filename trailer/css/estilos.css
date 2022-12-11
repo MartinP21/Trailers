@@ -1,0 +1,186 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ----- ----- ----- Trailer Principal ----- ----- ----- */
+.trailer-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/backdrop.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.trailer-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.trailer-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.trailer-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.trailer-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.trailer-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.trailer-principal .boton i {
+	margin-right: 1.25em;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.trailer-principal {
+		font-size: 14px;
+	}
+
+	.trailer-principal .descripcion {
+		max-width: 100%;
+	}
+}
+
+/* ----- ----- ----- Trailers Alternativos ----- ----- ----- */
+.contenedor1 img {
+	width: 230px;
+	height: 250px;
+	
+}
+
+.contenedor1 img:hover{
+	transform: scale(1.1);
+}
+
+.movie {
+	background-color: rgba(255, 0, 0, 0.534);
+	float: left;
+	margin-bottom: 10px;
+	width: 230px;
+	margin-left: 10px;
+	max-height:max-content;
+	height: 390px;
+	
+	
+}
+
+.contenedor1{
+	overflow: hidden;
+}
+
+.descripcion{
+	padding: 10px;
+}
+
+.boton1 {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.50em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 0.60em;
+}
+
+.boton1:hover {
+	background: #fff;
+	color: #000;
+}
+
+.trailers {
+	padding-left: 2%;
+}
+
+.footer-pg{
+    text-align: center;
+    color: rgb(83, 83, 82);
+	padding: 30px;
+}
+
+.footer-pg ul{
+    list-style: none;
+}
+
+hr{
+	background-color:rgb(83, 83, 82);
+}
